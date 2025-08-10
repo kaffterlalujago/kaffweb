@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kaffweb.com</title>
+  <!-- Font Awesome (brands) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#6e7780, #22242a);
+      color: white;
+    }
+    .container {
+      max-width: 420px;
+      margin: auto;
+      padding: 16px;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .back {
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero {
+      text-align: center;
+      margin-top: 16px;
+    }
+    .avatar {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.1);
+      background: linear-gradient(135deg, #0f1720, #21303a);
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .avatar img {
+      width: 78%;
+    }
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    .slogan {
+      font-size: 13px;
+      opacity: 0.9;
+      line-height: 1.2;
+    }
+    .socials {
+      margin-top: 10px;
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+    }
+    .socials button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+    }
+    .list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-bottom: 80px; /* space for bottom nav */
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 30px;
+      padding: 12px 14px;
+    }
+    .left {
+      width: 56px;
+      height: 56px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .left .fa-brands, .left img {
+      font-size: 24px;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+    }
+    .title {
+      flex: 1;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: .4px;
+    }
+    .dots {
+      opacity: 0.7;
+      font-size: 16px;
+    }
+
+    .left .fa-facebook-f { color: #1877F2; }
+    .left .fa-whatsapp { color: #25D366; }
+    .left .fa-youtube { color: #FF0000; }
+    .left .fa-github { color: #ffffff; background: linear-gradient(180deg,#0b0b0b,#2b2b2b); padding:8px; border-radius:50%; }
+    .left .fa-instagram { color: #fff; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); padding:6px; border-radius:50%; }
+
+    .bottom-nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      background: transparent;
+      pointer-events: none;
+    }
+    .nav-wrap {
+      width: 100%;
+      max-width: 420px;
+      padding: 6px 18px 18px;
+      display: flex;
+      justify-content: center;
+    }
+    .bottom-bar {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+      opacity: 0.9;
+    }
+
+    @media (max-width:420px){
+      .container{padding-left:12px;padding-right:12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="back">←</div>
+      <div>Browser web</div>
+    </div>
+
+    <div class="hero">
+      <div class="avatar">
+        <img src="image/gambar.jpg" alt="Logo">
+      </div>
+      <div class="name">KAFF HOST</div>
+      <div class="slogan">INNOVATE IN CODE,<br>FORTIFY IN SECURITY</div>
+      <div class="socials">
+        <button title="TikTok"><i class="fa-brands fa-tiktok"></i></button>
+        <button title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+      </div>
+    </div>
+
+    <div class="list">
+      <!-- Instagram -->
+      <div class="item">
+        <a href="https://www.instagram.com/kaff2.8?igsh=MWliOTl2Z2ZsOTdoNg==" target="_blank" style="display:flex;align-items:center;gap:12px;width:100%;text-decoration:none;color:inherit;">
+          <div class="left"><i class="fa-brands fa-instagram"></i></div>
+          <div class="title">INSTAGRAM</div>
+          <div class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </a>
+      </div>
+
+      <!-- Facebook -->
+      <div class="item">
+        <a href="https://www.facebook.com/profile.php?id=61556120872577" target="_blank" style="display:flex;align-items:center;gap:12px;width:100%;text-decoration:none;color:inherit;">
+          <div class="left"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="title">FACEBOOK</div>
+          <div class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </a>
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="item">
+        <a href="https://wa.me/6289653685695?text=Halo" target="_blank" style="display:flex;align-items:center;gap:12px;width:100%;text-decoration:none;color:inherit;">
+          <div class="left"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="title">WHATSAPP</div>
+          <div class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </a>
+      </div>
+
+      <!-- YouTube -->
+      <div class="item">
+        <a href="https://youtube.com/@kaffterlalujago?si=P2P5tdXPHsGvfU4Y" target="_blank" style="display:flex;align-items:center;gap:12px;width:100%;text-decoration:none;color:inherit;">
+          <div class="left"><i class="fa-brands fa-youtube"></i></div>
+          <div class="title">YOUTUBE</div>
+          <div class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </a>
+      </div>
+
+      <!-- TikTok -->
+      <div class="item">
+        <a href="tiktok.com/@k.for.kaff" target="_blank" style="display:flex;align-items:center;gap:12px;width:100%;text-decoration:none;color:inherit;">
+          <div class="left"><i class="fa-brands fa-tiktok"></i></div>
+          <div class="title">TIKTOK</div>
+          <div class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bottom-nav" aria-hidden="true">
+    <div class="nav-wrap">
+      <div class="button"></div>
+    </div>
+  </div>
+  <footer style="text-align:center; padding:18px 0; color:var(--muted);">&copy; 1001 - 2025 Kaffterlalujago</footer>
+</body>
+</html>
